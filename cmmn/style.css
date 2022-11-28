@@ -1,11 +1,14 @@
 body,html {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  /*position: relative;*/
+  width: 95%;
+  /*height: 100%;*/
+  /*margin: 0;
+  padding: 0;*/
   background: #1d1d1d;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 #container {
@@ -20,4 +23,16 @@ body,html {
 .dplayer-notice,
 .dplayer-bar-time {
   display: none !important;
+}
+
+.srvrlst {
+  display: flex;
+  justify-content: space-around;
+}
+.srvrlst li{
+  list-style: none;
+}
+.srvrlst li a{
+  color: white;
+  text-decoration: none;
 }
