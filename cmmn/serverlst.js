@@ -15,7 +15,7 @@ document.getElementById("serverlst").innerHTML =
 document.getElementById("proserverlst").innerHTML =
 `
 <ul class="srvrlst">
-  <li><a href="#">Pro_Server-1</a></li>
+  <li><a href="proserver1.html">Pro_Server-1</a></li>
   <li><a href="#">Pro_Server-2</a></li>
 </ul>
 
