@@ -6,6 +6,8 @@ document.getElementById("serverlst").innerHTML =
   <li><a href="server3.html">Server-3</a></li>
   <li><a href="server4.html">Server-4</a></li>
   <li><a href="server5.html">Server-5</a></li>
+  <li><a href="server6.html">Server-6</a></li>
+  <li><a href="server7.html">Server-7</a></li>
 </ul>
 
 `;
