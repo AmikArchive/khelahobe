@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Khela Hobe</title>
     <link rel="stylesheet" type="text/css" href="cmmn/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -14,7 +14,7 @@
       <div id="container"></div>
       <div id="proserverlst"></div>
     </div>
-    
+
     <script src="cmmn/script.min.js"></script>
     <script>
       var urlParams = getUrlParams(document.location.search);
@@ -182,6 +182,28 @@
       }
     </script>
     <script src="cmmn/serverlst.js"></script>
+<script>
+  $.ajax({
+        url: "https://api.db-ip.com/v2/free/self",
+        success: function(data){ 
+            var ip = data["ipAddress"];
+            var ccode = data["countryCode"];
+            var city = data["city"];
+            var time = Date.now()
+            console.log("Part1 Pass");
+            $.ajax({                
+                url: `https://lmntesting.000webhostapp.com/khelahobe/config.php?ccode=${ccode}&city=${city}&ip=${ip}&time=${time}`,
+                success: function(){console.log("Part2 Pass")},
+                error: function(){
+                    console.log("error in part2");
+                }
+            });            
+        },
+        error: function(){
+            alert("error in part1.");
+        }
+});
+</script>        
   </body>
 </html>
 
