@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Server-4_Khela Hobe</title>
+    <title>Khela Hobe</title>
     <link rel="stylesheet" type="text/css" href="cmmn/style.css">
 
   </head>
 
   <body>
-    <div id="serverlst"></div>  
-    <div id="container"></div>
-    <div id="proserverlst"></div>
+    <div class="mother">
+      <div id="serverlst"></div>
+      <div id="container"></div>
+      <div id="proserverlst"></div>
+    </div>
+    
     <script src="cmmn/script.min.js"></script>
     <script>
       var urlParams = getUrlParams(document.location.search);
-      // var url = urlParams.url;
-      var url = 'https://talgach.xyz/FWC-Join:@fifaxlive.m3u8';
+      var url = urlParams.url;
+      // var url = 'https://talgach.xyz/bdix14Join:@fifaxlive.m3u8';
       var isHideHotKey = urlParams.hideHotKey ? true : false;
 
       var isAndroid = /Android/.test(navigator.userAgent);
