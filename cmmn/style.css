@@ -42,3 +42,9 @@ body,html {
   font-weight: bold;
   text-decoration: none;
 }
+
+.currlink{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}

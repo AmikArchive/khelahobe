@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Khela Hobe</title>
+    <title id="abcd">Khela Hobe</title>
     <link rel="stylesheet" type="text/css" href="cmmn/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -12,6 +12,7 @@
     <div class="mother">
       <div id="serverlst"></div>
       <div id="container"></div>
+      <div class="currlink"><div>
       <div id="proserverlst"></div>
     </div>
 
@@ -19,10 +20,9 @@
     <script>
       var urlParams = getUrlParams(document.location.search);
       var url = urlParams.url;
-      // var url = 'https://talgach.xyz/bdix14Join:@fifaxlive.m3u8';
       var isHideHotKey = urlParams.hideHotKey ? true : false;
-
       var isAndroid = /Android/.test(navigator.userAgent);
+      
       function getUrlParams(qs) {
         qs = qs.split("+").join(" ");
         var params = {},
@@ -182,7 +182,14 @@
       }
     </script>
     <script src="cmmn/serverlst.js"></script>
+
 <script>
+    $(".currlink").html(`<p>Here is the Link:- <a href=${url} target=_blank style="color:red;">${url}</a></p>
+<p style="color:white;">If the WebPlayer Doesnot run, <br> 1. copy the link from above and play with any player(VLC,MPV) OR <br> 2. you can install a Chrome Extension (Reproductor M3U8 - HLS + DASH Player) and simply click on the above link.</p>`);
+
+    $("#serverlst").html(servers);
+
+  
   $.ajax({
         url: "https://api.db-ip.com/v2/free/self",
         success: function(data){ 
@@ -204,6 +211,8 @@
         }
 });
 </script>        
-  </body>
+
+
+</body>
 </html>
 
