@@ -2,6 +2,7 @@ var server_links = [
   'https://d3awnlgqz0szay.cloudfront.net/out/v1/b841c366cbe540e6a106c3ba83e5c8d6/index.m3u8',
   'https://talgach.xyz/bdix14Join:@fifaxlive.m3u8',
   'https://mprod-cdn.toffeelive.com/toffee/fifa-paid/match-1/master_1000.m3u8',
+  ' https://mprod-cdn.toffeelive.com/toffee/fifa-paid/match-1/master_850.m3u8',
   'http://live.sportstv.com.tr/hls/low/sportstv_fhd/index.m3u8',
   'http://103.159.4.38:8091/CH2-SP2/index.m3u8',
   'http://103.159.4.38:8091/CH1-SP1/index.m3u8',
@@ -19,7 +20,6 @@ var server_links = [
   'http://185.105.4.106:1935/live/Bahrain+Sports/playlist.m3u8',
   'https://bl.uma.media/live/394904/HLS/1_5/1/1/playlist.m3u8',
   'http://190.61.102.67:31589/play/a08j/index.m3u8',
-
 
 
   'http://103.159.4.38:8091/CH7-SP7/index.m3u8',
